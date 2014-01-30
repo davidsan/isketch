@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="fr.upmc.pc2r.isketch.main.SketchMain" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/main/SketchMain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="169" width="150" x="97" y="-34"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fr.upmc.pc2r.isketch.views.SketchFrame" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/views/SketchFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="51" width="151" x="97" y="309"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="fr.upmc.pc2r.isketch.model.User" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/model/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="389" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fr.upmc.pc2r.isketch.controller.SketchController" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/controller/SketchController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="699" y="129"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.upmc.pc2r.isketch.controller.SketchReader" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/controller/SketchReader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="205" x="596" y="344"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="java.lang.Runnable" project="isketch" 
+    file="/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
+    <position height="79" width="204" x="597" y="214"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="fr.upmc.pc2r.isketch.views.SketchCanvas" project="isketch" 
+    file="/isketch/src/fr/upmc/pc2r/isketch/views/SketchCanvas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="51" width="149" x="97" y="223"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="true" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="8">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="9" name="panelCanvas"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="11">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="12">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="13" name="model"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <bendpoint x="173" y="398"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="16" name="view"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="18">    
+    <bendpoint x="700" y="201"/>    
+    <bendpoint x="552" y="201"/>    
+    <bendpoint x="552" y="335"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="19" name="view"/>      
+      <multiplicity id="20" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="21">    
+    <bendpoint x="596" y="364"/>    
+    <bendpoint x="390" y="364"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="22" name="model"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
